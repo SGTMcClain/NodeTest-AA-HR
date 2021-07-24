@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0040" tests="6" failures="6">
+  <testsuite name="Root Suite" timestamp="2021-07-24T13:41:16" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="file_system_write_basics" timestamp="2021-07-24T13:41:16" tests="6" file="/Users/sgtmcclain/AppAcademy_Test/NodeJS_Test/fd684c9d-d1bf-4037-b0bd-1b7ac3cfe1a3/test/index.spec.js" time="0.0040" failures="6">
+    <testcase name="file_system_write_basics should create a new directory" time="0.0020" classname="should create a new directory">
+      <failure message="app.createDirectoryIfNotExists(...).then is not a function" type="TypeError"><![CDATA[TypeError: app.createDirectoryIfNotExists(...).then is not a function
+    at Context.done (test/index.spec.js:24:14)]]></failure>
+    </testcase>
+    <testcase name="file_system_write_basics should create a recursive directory" time="0.0010" classname="should create a recursive directory">
+      <failure message="ENOENT: no such file or directory, mkdir &apos;/Users/sgtmcclain/AppAcademy_Test/NodeJS_Test/fd684c9d-d1bf-4037-b0bd-1b7ac3cfe1a3/tmp/logs&apos;" type="Error"><![CDATA[Error: ENOENT: no such file or directory, mkdir '/Users/sgtmcclain/AppAcademy_Test/NodeJS_Test/fd684c9d-d1bf-4037-b0bd-1b7ac3cfe1a3/tmp/logs'
+    at Object.mkdirSync (fs.js:750:3)
+    at Object.createDirectoryIfNotExists (index.js:15:12)
+    at Context.done (test/index.spec.js:34:13)]]></failure>
+    </testcase>
+    <testcase name="file_system_write_basics should create a dynamic directory" time="0.0010" classname="should create a dynamic directory">
+      <failure message="app.createDirectoryIfNotExists(...).then is not a function" type="TypeError"><![CDATA[TypeError: app.createDirectoryIfNotExists(...).then is not a function
+    at Context.done (test/index.spec.js:46:14)]]></failure>
+    </testcase>
+    <testcase name="file_system_write_basics should create a directory and write the file inside the directory" time="0.0000" classname="should create a directory and write the file inside the directory">
+      <failure message="app.createDirectoryIfNotExists(...).then is not a function" type="TypeError"><![CDATA[TypeError: app.createDirectoryIfNotExists(...).then is not a function
+    at Context.done (test/index.spec.js:59:14)]]></failure>
+    </testcase>
+    <testcase name="file_system_write_basics should write a file inside a recursive directory" time="0.0000" classname="should write a file inside a recursive directory">
+      <failure message="ENOENT: no such file or directory, mkdir &apos;/Users/sgtmcclain/AppAcademy_Test/NodeJS_Test/fd684c9d-d1bf-4037-b0bd-1b7ac3cfe1a3/tmp/logs&apos;" type="Error"><![CDATA[Error: ENOENT: no such file or directory, mkdir '/Users/sgtmcclain/AppAcademy_Test/NodeJS_Test/fd684c9d-d1bf-4037-b0bd-1b7ac3cfe1a3/tmp/logs'
+    at Object.mkdirSync (fs.js:750:3)
+    at Object.createDirectoryIfNotExists (index.js:15:12)
+    at Context.done (test/index.spec.js:74:13)]]></failure>
+    </testcase>
+    <testcase name="file_system_write_basics should reject with an error if the passed data is invalid" time="0.0000" classname="should reject with an error if the passed data is invalid">
+      <failure message="app.writeJSON(...).catch is not a function" type="TypeError"><![CDATA[TypeError: app.writeJSON(...).catch is not a function
+    at Context.done (test/index.spec.js:92:19)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
